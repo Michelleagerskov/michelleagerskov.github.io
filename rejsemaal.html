@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Language set to English. Change to da for Danish if needed-->
+
+<head>
+    <meta charset="UTF-8">
+    <!--This ensures that the browser can read special signs and characters like the Danish letters æ, ø, å -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <!--This helps avoid that a site displays differently with different screen resolutions -->
+
+    <title>Untitled document</title>
+    <!--This title will be the heading on google search and on the tab in the browser. Can contain up to 70 characters-->
+    <meta name="description" content="Here you add the description of your content">
+    <!-- this is for search engne optimization - fill in description of the page content. This will usually be the text shown under the heading in a search. Can contain up to 155 characters-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--This is a link to the stylesheet. Any rule written in the stylesheet will be used for this page -->
+</head>
+
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <section id="logo-burger">
+            <img id=logo src="images/horisont-rejser-logo-top.png" alt="horisont logo">
+            <label for="toggle">&#9776;</label>
+        </section>
+        <nav>
+            <input type="checkbox" id="toggle" class="hidden">
+            <!-- This has to be outside of #logo-burger to work. #main-nav cannot be selected when this is in a container -->
+            <ul id="main-nav">
+                <li><a href="#forside.html">Forside</a></li>
+                <li><a href="#rejsemal.html">Rejsemål</a></li>
+                <li><a href="#bookk_mode.html">Book møde</a></li>
+                <li><a href="#omos.html">Om os</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="pic-rejsemaal">
+    <img id="kamel" src="images/jordan-kamel.jpg" alt="Kamel i Jordan">
+    <button id="kamel-button" type="button">Rejser til Jordan</button>
+    <img id="marokko" src="images/marokko-oerken.jpg" alt="Ørken i Marokko">
+    <button id="marokko-button" type="button">Rejser til Marokko</button>
+    <img id="sri-lanka" src="images/sri-lanka-elefant.jpg" alt="Elefant i Sri-lanka">
+    <button id="sri-lanka-button" type="button">Rejser til Sri-lanka</button>
+    
+    <!-- Footer -->
+    <div class="footer">
+        <img id="footer-logo" src="images/horisont-rejser-logo-top.png" alt="logo for horisont rejser">
+        <p id="footer-text"> Tlf: 7020 2779 Mail: info@horisontrejser.dk Adresse: Rovsingsgade 88 DK-2200 København N </p>
+    </div>
+
+</body>
+
+</html>

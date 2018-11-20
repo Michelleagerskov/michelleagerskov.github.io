@@ -1,0 +1,307 @@
+/*Navigation*/
+
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    background: olive;
+    width: 100%;
+    padding: 0 20px;
+}
+
+#logo-burger {
+    display: flex;
+    align-items: center;
+    margin-left: .5em;
+}
+
+#logo {
+    width: 100%;
+}
+
+#logo,
+#main-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+#main-nav {
+    display: flex;
+    margin-right: .5em;
+    list-style: none;
+}
+
+#main-nav a {
+    display: block;
+    margin-left: 1em;
+    font-size: 1.4em;
+    line-height: 1.4em;
+    
+}
+
+#main-nav a:hover {
+    color: white;position: sticky;
+}
+
+.active {
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+/*Forside*/
+#forside-billede {
+    width: 100%;
+}
+
+#forside-button {
+    background-color: olive;
+    border: none;
+    color: white;
+    padding: 1px 3px;
+    margin: 10% 40% 10% 40%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    position: absolute;
+    top: 18%;
+}
+
+#forside-overskrift {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    margin: 10% 30% 10% 30%;
+    position: absolute;
+    top: 10%;
+}
+/*Rejsemål*/
+.pic-rejsemaal {
+    margin: 20px;
+}
+#kamel {
+    width: 100%;
+}
+#kamel-button {
+    background-color: olive;
+    border: none;
+    color: white;
+    padding: 1px 3px;
+    margin: 5% 40%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    position: absolute;
+    top: 18%;
+}
+#marokko {
+    width: 100%;
+}
+#marokko-button {
+    background-color: olive;
+    border: none;
+    color: white;
+    padding: 1px 3px;
+    margin: 50% 40%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    position: absolute;
+    top: 18%;
+}
+#sri-lanka {
+    width: 100%;
+}
+#sri-lanka-button{
+    background-color: olive;
+    border: none;
+    color: white;
+    padding: 1px 3px;
+    margin: 400px 40%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    position: absolute;
+    top: 18%;
+}
+
+/*footer*/
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: olive;
+    color: white;
+    text-align: center;
+}
+
+#footer-logo {
+    width: 20%;
+    margin: 20px;
+    float: left;
+}
+
+#footer-text {
+    margin: 30px;
+    font-size: 11px;
+
+}
+
+
+
+/*MEDIA QUERY MOBILE */
+
+@media all and (max-width: 599px) {
+
+    /*HEADER NAV*/
+    header {
+        display: block;
+    }
+
+    #logo-burger {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo {
+        display: block;
+        font-size: 2em;
+        cursor: pointer;
+        width: 25%;
+    }
+
+    #toggle:checked + #main-nav {
+        display: block;
+    }
+
+    #main-nav {
+        display: none;
+    }
+
+    #main-nav li {
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    #main-nav a {
+        margin: 0;
+    }
+
+    #main-nav li:last-of-type {
+        border-bottom: none;
+    }
+}
+
+
+
+/*MEDIA QUERY TABLET AND ABOVE*/
+
+@media all and (min-width: 600px) {
+
+    /*HEADER NAV*/
+    header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        /*remove this if you do not want the column layout whit logo above menu for medium size screens*/
+    }
+
+    #logo-burger {
+        margin: 0;
+
+    }
+
+    #logo {
+        width: 50%;
+        margin: 1% 40%;
+        position: relative;
+
+
+    }
+
+    #main-nav {
+        justify-content: space-between;
+        width: 100%;
+        margin: 0;
+    }
+
+    #main-nav a {
+        margin: 0 .5em;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    label {
+        display: none;
+    }
+    /*Forside*/
+
+    #forside-overskrift {
+        margin: 25% 38%;
+    }
+
+    #forside-button {
+        margin: 25% 25% 25% 43%;
+        padding: 10px;
+    }
+/* Footer */
+    #footer-logo {
+        margin: 20px;
+    }
+
+    #footer-text {
+        font-size: 15px;
+        margin: 40px;
+    }
+
+
+
+
+
+}
+
+/*MEDIA QUERY LAPTOP AND ABOVE*/
+
+@media all and (min-width: 1024px) {
+
+    /*HEADER*/
+    header {
+        flex-direction: row;
+        align-items: center;
+    }
+/*Forside*/
+    #forside-overskrift {
+        margin: 13% 40%;
+        font-size: 30px;
+
+    }
+
+    #forside-button {
+        margin: 15% 45%;
+        padding: 15px;
+        align-self: center;
+    }
+    /*Footer*/
+
+    #footer-logo {
+        width: 10%;
+        margin: 10px;
+    }
+
+    #footer-text {
+        font-size: 20px;
+    }
+}
